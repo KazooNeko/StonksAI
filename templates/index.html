@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Add a title -->
+        <h1>Stock Prediction</h1>
+
+        <!-- Add an input field for the ticker symbol -->
+        <label for="ticker">Enter the ticker symbol (may take up to 30s to load img):</label>
+        <input type="text" id="ticker" name="ticker" placeholder="E.g. AAPL">
+
+        <!-- Add a submit button -->
+        <button id="submit-btn">Predict</button>
+
+        <!-- Add a loading spinner -->
+        <!-- <div id="loading-spinner" class="hidden">
+            <img src="{{ url_for('static', filename='spinner.gif') }}" alt="Loading...">
+        </div> -->
+
+        <!-- Add an empty div for the result -->
+        <div id="result"></div>
+
+        <!-- Add a container for the graph -->
+        <div id="graph-container">
+            <img src="" id="graph">
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

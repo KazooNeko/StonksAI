@@ -1,0 +1,70 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 0.6rem;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+#result {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#graph-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+  }
+  
+  #loading-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+  }
